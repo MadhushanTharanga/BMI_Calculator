@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 const kAppBarClr = Color(0xFF060B22);
 const kTextClr = Color(0xFFffffff);
 const kTileClr = Color(0xFF1C1F31);
+const kTextClr1 = Color(0xFF6E7484);
+const kThumbClr = Color(0xFFEC1359);
 const kTileClr1 = Color(0xFF0E1327);
 const kMaleIcon = Icon(
   Icons.male,

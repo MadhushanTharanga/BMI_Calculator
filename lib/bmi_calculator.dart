@@ -53,7 +53,10 @@ class _BMICalculatorPageState extends State<BMICalculatorPage> {
                     child: Container(
                       width: 140,
                       height: 130,
-                      color: kTileClr,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        color: kTileClr,
+                      ),
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
@@ -75,7 +78,10 @@ class _BMICalculatorPageState extends State<BMICalculatorPage> {
                     child: Container(
                       width: 140,
                       height: 130,
-                      color: kTileClr,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        color: kTileClr,
+                      ),
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
@@ -295,6 +301,28 @@ class _BMICalculatorPageState extends State<BMICalculatorPage> {
                   ),
                 ],
               ),
+              Spacer(),
+              Row(
+                children: [
+                  Expanded(
+                    child: TextButton(
+                      onPressed: () {},
+                      child: Text(
+                        "CALCULATE YOUR BMI",
+                        style: TextStyle(
+                            color: kTextClr,
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold),
+                      ),
+                      style: TextButton.styleFrom(
+                        backgroundColor: kThumbClr,
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(5)),
+                      ),
+                    ),
+                  ),
+                ],
+              )
             ],
           ),
         ),
